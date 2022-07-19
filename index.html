@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form action="#">
+        <h1>Movie quiz</h1>
+        <p class="para">This quiz contains 5 questions<br /> Click on the submit button to view your score</p>
+
+        <div class="question-box">
+            <p class="para">1. The actor who played Captain Jack sparrow</p>
+
+            <div class="options1" id="leonardo-dicaprio">
+                <label for="leonardo-dicaprio">
+                    <input id="leonardo-dicaprio" value="Leonardo Dicaprio" type="radio" name="potc-hero">Leonardo
+                    Dicaprio
+                </label><br />
+            </div>
+
+            <div class="options1" id="keenu-reaves">
+                <label for="keenu-reaves">
+                    <input id="keenu-reaves" value="Keanu Reeves" type="radio" name="potc-hero">Keanu Reeves
+                </label><br />
+            </div>
+
+            <div class="options1" id="johnny-depp">
+                <label for="johnny-depp">
+                    <input id="johnny-depp" value="Johnny Depp" type="radio" name="potc-hero">Johnny Depp
+                </label>
+            </div>
+        </div>
+
+        <div class="question-box">
+
+            <p class="para">2. Titanic was released in the year</p>
+
+            <div class="options2" id="1997">
+                <label for="1997">
+                    <input id="1997" value="1997" type="radio" name="titanic-year">1997
+                </label><br />
+            </div>
+
+            <div class="options2" id="2000">
+                <label for="2000">
+                    <input id="2000" value="2000" type="radio" name="titanic-year">2000
+                </label><br />
+            </div>
+
+            <div class="options2" id="2003">
+                <label for="2003">
+                    <input id="2003" value="2003" type="radio" name="titanic-year">2003
+                </label>
+            </div>
+        </div>
+
+        <div class="question-box">
+
+            <p class="para">3. The only Indian actor to be featured in a CBSE syllabus lesson</p>
+
+            <div class="options3" id="rajinikanth">
+                <label for="rajinikanth">
+                    <input id="rajinikanth" value="Rajinikanth" type="radio" name="cbse-syllabus-actor">Rajinikanth
+                </label><br />
+            </div>
+
+            <div class="options3" id="vijay">
+                <label for="vijay">
+                    <input id="vijay" value="Vijay" type="radio" name="cbse-syllabus-actor">Vijay
+                </label><br />
+            </div>
+
+            <div class="options3" id="surya">
+                <label for="surya">
+                    <input id="surya" value="Surya" type="radio" name="cbse-syllabus-actor">Surya
+                </label>
+            </div>
+        </div>
+
+        <div class="question-box">
+
+            <p class="para">4. The most expensive Kannada film ever made</p>
+
+            <div class="options4" id="kgf-1">
+                <label for="kgf-1">
+                    <input id="kgf-1" value="K.G.F: Chapter 1" type="radio" name="expensive-film">K.G.F: Chapter 1
+                </label><br />
+            </div>
+
+            <div class="options4" id="kgf-2">
+                <label for="kgf-2">
+                    <input id="kgf-2" value="K.G.F: Chapter 2" type="radio" name="expensive-film">K.G.F: Chapter 2
+                </label><br />
+            </div>
+
+            <div class="options4" id="enthiran">
+                <label for="enthiran">
+                    <input id="enthiran" value="Enthiran" type="radio" name="expensive-film">Enthiran
+                </label>
+            </div>
+        </div>
+
+        <div class="question-box">
+
+            <p class="para">5. Hub of Malayalam film industry</p>
+
+            <div class="options5" id="kochi">
+                <label for="kochi">
+                    <input id="kochi" value="Kochi" type="radio" name="hub">Kochi
+                </label><br />
+            </div>
+
+            <div class="options5" id="ernakulam">
+                <label for="ernakulam">
+                    <input id="ernakulam" value="Ernakulam" type="radio" name="hub">Ernakulam
+                </label><br />
+            </div>
+
+            <div class="options5" id="idukki">
+                <label for="idukki">
+                    <input id="idukki" value="Idukki" type="radio" name="hub">Idukki
+                </label>
+            </div>
+        </div>
+
+        <button id="submit" type="button">Submit</button><br />
+        <!--type=button prevents the form from auto refresh-->
+
+        <button id="reset" type="reset">Reset</button>
+    </form>
+
+    <div id="result" hidden>
+        <h2>Your response has been received</h2>
+        <p>Your score - <span id="final-score">0</span>/5</p>
+        <button id="back" type="button">Go back</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

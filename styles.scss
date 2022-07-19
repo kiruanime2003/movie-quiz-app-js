@@ -1,0 +1,173 @@
+$cultured: #F8F9FA;
+$gainsboro: #DEE2E6;
+$onyx: #343A40;
+$eerieBlack: #212529;
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $cultured;
+}
+
+@mixin button-styles {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+form{
+    margin: auto;
+    max-width: 550px;
+    padding: 0 20px;
+
+    h1{
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: -0.8px;
+        color: $eerieBlack;
+        margin: 60px 0 20px 0;
+    }
+
+    .para, label{
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.8;
+        color: $onyx;
+    }
+
+    input:hover{
+        cursor: pointer;
+    }
+
+    input{
+        margin-right: 7px;
+        accent-color: $onyx;
+    }
+
+    .question-box{
+        background-color: $gainsboro;
+        border-radius: 8px;
+        height: fit-content;
+        padding: 15px 10px;
+        margin: 30px 0;
+        width: 520px;
+        box-shadow: 5px 5px 0px 0px $onyx;
+    }
+
+    #submit, #reset{
+        @include button-styles();
+    }
+
+    #submit{
+        background-color: $eerieBlack;
+        color: $cultured;
+        margin-top: 5px;
+    }
+
+    #reset{
+        background-color: $cultured;
+        color: $eerieBlack;
+        border: 2px $eerieBlack solid;
+    }
+
+    #submit:hover{
+        background-color: $onyx;
+    }
+
+    #reset:hover{
+        background-color: $gainsboro;
+    }
+}
+
+#result{
+
+    margin: auto;
+    max-width: 500px;
+    background-color: $gainsboro;
+    margin-top: 20px;
+    padding: 17px 15px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 0px 0px $onyx;
+
+    h2{
+        font-weight: 500;
+        font-size: 17px;
+        color: $eerieBlack;
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 15px;
+        color: $eerieBlack;
+        margin-bottom: 10px;
+    }
+
+    button{
+        @include button-styles();
+        background-color: $cultured;
+        color: $eerieBlack;
+        border: 2px $eerieBlack solid;
+    }
+
+    button:hover{
+        background-color: $gainsboro;
+    }
+}
+
+@media screen and (max-width:578px) {
+    
+    form{
+        max-width: 100vw;
+
+        h1{
+            font-size: 23px;
+        }
+    
+        .para, label{
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    
+        .question-box{
+            width: 90vw;
+        }
+
+        #submit, #reset{
+            font-size: 13px;
+        }
+    
+    }
+    
+    #result{
+    
+        max-width: 90vw;
+    
+        h2{
+            
+            font-size: 15px;
+        }
+    
+        p{
+            
+            font-size: 14px;
+        }
+    
+        button{
+            @include button-styles();
+        }
+    }
+}

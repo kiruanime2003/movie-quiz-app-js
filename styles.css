@@ -1,0 +1,153 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #F8F9FA;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+form {
+  margin: auto;
+  max-width: 550px;
+  padding: 0 20px;
+}
+form h1 {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -0.8px;
+  color: #212529;
+  margin: 60px 0 20px 0;
+}
+form .para, form label {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #343A40;
+}
+form input:hover {
+  cursor: pointer;
+}
+form input {
+  margin-right: 7px;
+  accent-color: #343A40;
+}
+form .question-box {
+  background-color: #DEE2E6;
+  border-radius: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px 10px;
+  margin: 30px 0;
+  width: 520px;
+  box-shadow: 5px 5px 0px 0px #343A40;
+}
+form #submit, form #reset {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+form #submit {
+  background-color: #212529;
+  color: #F8F9FA;
+  margin-top: 5px;
+}
+form #reset {
+  background-color: #F8F9FA;
+  color: #212529;
+  border: 2px #212529 solid;
+}
+form #submit:hover {
+  background-color: #343A40;
+}
+form #reset:hover {
+  background-color: #DEE2E6;
+}
+
+#result {
+  margin: auto;
+  max-width: 500px;
+  background-color: #DEE2E6;
+  margin-top: 20px;
+  padding: 17px 15px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 0px 0px #343A40;
+}
+#result h2 {
+  font-weight: 500;
+  font-size: 17px;
+  color: #212529;
+  margin-bottom: 10px;
+}
+#result p {
+  font-weight: 400;
+  font-size: 15px;
+  color: #212529;
+  margin-bottom: 10px;
+}
+#result button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  letter-spacing: 0.8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #F8F9FA;
+  color: #212529;
+  border: 2px #212529 solid;
+}
+#result button:hover {
+  background-color: #DEE2E6;
+}
+
+@media screen and (max-width: 578px) {
+  form {
+    max-width: 100vw;
+  }
+  form h1 {
+    font-size: 23px;
+  }
+  form .para, form label {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  form .question-box {
+    width: 90vw;
+  }
+  form #submit, form #reset {
+    font-size: 13px;
+  }
+  #result {
+    max-width: 90vw;
+  }
+  #result h2 {
+    font-size: 15px;
+  }
+  #result p {
+    font-size: 14px;
+  }
+  #result button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
