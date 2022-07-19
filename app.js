@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.target.id === questionsArray1[2].id) score1 = 1;
         else score1 = 0;
 
-        console.log("Score1 = " + score1);
         calculateFinalScore();
     }));
 
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.target.id === questionsArray2[0].id) score2 = 1;
         else score2 = 0;
 
-        console.log("Score2 = " + score2);
         calculateFinalScore();
     }));
 
@@ -29,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.target.id === questionsArray3[0].id) score3 = 1;
         else score3 = 0;
 
-        console.log("Score3 = " + score3);
         calculateFinalScore();
     }));
 
@@ -37,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.target.id === questionsArray4[1].id) score4 = 1;
         else score4 = 0;
 
-        console.log("Score4 = " + score4);
         calculateFinalScore();
     }));
 
@@ -45,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.target.id === questionsArray5[0].id) score5 = 1;
         else score5 = 0;
 
-        console.log("Score5 = " + score5);
         calculateFinalScore();
     }));
 
