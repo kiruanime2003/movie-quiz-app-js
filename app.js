@@ -60,5 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("result").hidden = true;
        document.querySelector("form").hidden = false;
     });
+
+    document.getElementById("reset").addEventListener("click", function(){
+        finalScore = score1 = score2 = score3 = score4 = score5 = 0;
+    });
 });
 
